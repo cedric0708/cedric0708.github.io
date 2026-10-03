@@ -4,114 +4,177 @@
   <meta charset="UTF-8">
   <title>Gwanyeop Kim | AI Researcher</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gwanyeop Kim - NLP researcher focusing on LLMs, RAG, multi-agent systems and AGI.">
+  <meta name="theme-color" content="#07081a">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <section class="hero">
+  <div class="progress" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a class="nav-logo" href="#top" aria-label="Back to top">GK</a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#interests">Interests</a>
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <canvas id="network" aria-hidden="true"></canvas>
+    <div class="hero-fade" aria-hidden="true"></div>
+
     <div class="hero-content">
-      <h1>Gwanyeop Kim</h1>
-      <p class="tagline">AI Researcher | LLM · RAG · Agentic Systems</p>
-      <p class="description">
+      <p class="hero-status"><span class="pulse"></span>Incoming M.S. student at UNIST · Mar 2027</p>
+      <h1 class="hero-name">Gwanyeop Kim</h1>
+      <p class="hero-role">AI Researcher working on <span class="typed" id="typed"></span><span class="caret" aria-hidden="true"></span></p>
+      <p class="hero-desc">
         I am an incoming M.S student researcher in NLP focusing on
-        Large Language Models,
-        intelligent agentic systems, and Artificial General Intelligence(AGI).
+        Large Language Models, intelligent agentic systems, and
+        Artificial General Intelligence (AGI).
       </p>
       <div class="hero-links">
-        <a href="mailto:mdhskgy722@gmail.com">Email</a>
-        <a href="data/Gwanyeop Kim (3).pdf" target="_blank">CV</a>
-        <a href="https://github.com/cedric0708">GitHub</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Research Interests</h2>
-    <div class="grid">
-      <div class="card">Multi-Agent Systems</div>
-      <div class="card">Robust & Reliable AI</div>
-      <div class="card">Artificial General Intelligence(AGI)</div>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Publications</h2>
-
-    <div class="paper">
-      <h3>AMORO-RAG : Adaptive Multi-Objective Reinforcement Optimization for RAG</h3>
-      <p class="meta">Paper Submission</p>
-      <p>
-        - 1st author
-      </p>
-      <p>
-        - Proposes a reinforcement learning-based dynamic optimization framework to enhance reasoning reliability and knowledge grounding in RAG systems.
-      </p>
-      <p>
-        - Designed query-specific reward weighting mechanism.
-      </p>
-      <div class="paper-links">
-        <a href="data/AMORO-RAG.pdf" target="_blank">Paper</a>
-        <a href="https://www.notion.so/AMORO-RAG-Adaptive-Multi-Objective-Reinforcement-Optimization-for-RAG-2ea7b0b7371d8043bac3fa3f74b6611d">Paper Summary Page</a>
+        <a class="btn btn-primary" href="mailto:mdhskgy722@gmail.com">Email me</a>
+        <a class="btn" href="data/Gwanyeop%20Kim%20(3).pdf" target="_blank" rel="noopener">View CV</a>
+        <a class="btn" href="https://github.com/cedric0708" target="_blank" rel="noopener">GitHub</a>
       </div>
     </div>
 
+    <a class="scroll-hint" href="#interests" aria-label="Scroll to content">
+      <span></span>
+    </a>
   </section>
 
-  <section class="section">
-    <h2>Research Experience</h2>
+  <main>
+    <!-- INTERESTS -->
+    <section class="section" id="interests">
+      <h2 class="section-title">Research Interests</h2>
+      <div class="grid">
+        <article class="card spot">
+          <svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <circle cx="24" cy="10" r="5"/><circle cx="10" cy="36" r="5"/><circle cx="38" cy="36" r="5"/>
+            <path d="M21 14.5 12.5 31.5M27 14.5l8.5 17M15 36h18"/>
+          </svg>
+          <h3>Multi-Agent Systems</h3>
+        </article>
+        <article class="card spot">
+          <svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M24 5 8 11v11c0 10 7 17 16 21 9-4 16-11 16-21V11L24 5Z"/><path d="m17 24 5 5 9-10"/>
+          </svg>
+          <h3>Robust &amp; Reliable AI</h3>
+        </article>
+        <article class="card spot">
+          <svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M24 6a8 8 0 0 0-8 8 8 8 0 0 0-6 8 8 8 0 0 0 4 7 8 8 0 0 0 10 9V6Z"/>
+            <path d="M24 6a8 8 0 0 1 8 8 8 8 0 0 1 6 8 8 8 0 0 1-4 7 8 8 0 0 1-10 9"/>
+            <path d="M24 16v-2M24 26v-4M24 36v-4"/>
+          </svg>
+          <h3>Artificial General Intelligence (AGI)</h3>
+        </article>
+      </div>
+    </section>
 
-    <div class="paper">
-      <h3>Natural Language Processing Lab(NLP Lab), UNIST</h3>
-      <p class="meta">Research Intern (May.2025 – Feb.2027)</p>
-      <p class="meta">Advisor: Prof. Seunghoon Na</p>
-      <p>
-        Research Area: RAG Optimization, Efficient Reasoning, Agentic LLM Systems
-      </p>
-    </div>
+    <!-- PUBLICATIONS -->
+    <section class="section" id="publications">
+      <h2 class="section-title">Publications</h2>
 
-    <div class="paper">
-      <h3>Data Mining and Information Systems Lab(DMIS Lab), Korea University</h3>
-      <p class="meta">Research Intern (Mar.2026 – Jul.2026)</p>
-      <p class="meta">Advisor: Prof. Jaewoo Kang</p>
-      <p>
-        Research Area: Agentic AI, Multi Agent System, BioNLP
-      </p>
-    </div>
+      <article class="paper featured spot">
+        <div class="paper-top">
+          <span class="badge">Paper Submission</span>
+          <span class="badge badge-soft">1st author</span>
+        </div>
+        <h3>AMORO-RAG: Adaptive Multi-Objective Reinforcement Optimization for RAG</h3>
+        <ul class="paper-points">
+          <li>Proposes a reinforcement learning-based dynamic optimization framework to enhance reasoning reliability and knowledge grounding in RAG systems.</li>
+          <li>Designed query-specific reward weighting mechanism.</li>
+        </ul>
+        <div class="paper-links">
+          <a class="btn btn-primary" href="data/AMORO-RAG.pdf" target="_blank" rel="noopener">Read paper</a>
+          <a class="btn" href="https://www.notion.so/AMORO-RAG-Adaptive-Multi-Objective-Reinforcement-Optimization-for-RAG-2ea7b0b7371d8043bac3fa3f74b6611d" target="_blank" rel="noopener">Paper summary page</a>
+        </div>
+      </article>
+    </section>
 
-  </section>
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <h2 class="section-title">Research Experience</h2>
 
-  <section class="section">
-    <h2>Education</h2>
+      <ol class="timeline">
+        <li class="tl-item">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <div class="tl-card spot">
+            <p class="tl-date">May 2025 – Feb 2027</p>
+            <h3>Natural Language Processing Lab (NLP Lab), UNIST</h3>
+            <p class="tl-sub">Research Intern · Advisor: Prof. Seunghoon Na</p>
+            <div class="tags">
+              <span>RAG Optimization</span><span>Efficient Reasoning</span><span>Agentic LLM Systems</span>
+            </div>
+          </div>
+        </li>
 
-    <div class="paper">
-      <h3>UNIST(Ulsan National Institute of Science and Technology)</h3>
-      <p class="meta">M.S in Artificial Intelligence</p>
-      <p>
-        Mar.2027 ~ Feb.2029
-      </p>
-    </div>
+        <li class="tl-item">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <div class="tl-card spot">
+            <p class="tl-date">Mar 2026 – Jul 2026</p>
+            <h3>Data Mining and Information Systems Lab (DMIS Lab), Korea University</h3>
+            <p class="tl-sub">Research Intern · Advisor: Prof. Jaewoo Kang</p>
+            <div class="tags">
+              <span>Agentic AI</span><span>Multi Agent System</span><span>BioNLP</span>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </section>
 
-    <div class="paper">
-      <h3>Konkuk University</h3>
-      <p class="meta">B.S in Computer Science & Engineering</p>
-      <p>
-        Feb.2027
-      </p>
-    </div>
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <h2 class="section-title">Education</h2>
 
-    <div class="paper">
-      <h3>Republic of Korea Air Force</h3>
-      <p class="meta">Military Service</p>
-      <p class="meta">Information System Management Specialist</p>
-      <p>
-        Mar.2023 - Dec.2024
-      </p>
-    </div>
+      <ol class="timeline">
+        <li class="tl-item">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <div class="tl-card spot">
+            <p class="tl-date">Mar 2027 – Feb 2029</p>
+            <h3>UNIST (Ulsan National Institute of Science and Technology)</h3>
+            <p class="tl-sub">M.S. in Artificial Intelligence</p>
+          </div>
+        </li>
 
-  </section>
-  <footer>
-    <p>© 2026 Gwanyeop Kim</p>
+        <li class="tl-item">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <div class="tl-card spot">
+            <p class="tl-date">Feb 2027</p>
+            <h3>Konkuk University</h3>
+            <p class="tl-sub">B.S. in Computer Science &amp; Engineering</p>
+          </div>
+        </li>
+
+        <li class="tl-item">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <div class="tl-card spot">
+            <p class="tl-date">Mar 2023 – Dec 2024</p>
+            <h3>Republic of Korea Air Force</h3>
+            <p class="tl-sub">Military Service · Information System Management Specialist</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-cta">Interested in working together?</p>
+    <a class="footer-mail" href="mailto:mdhskgy722@gmail.com">mdhskgy722@gmail.com</a>
+    <p class="footer-copy">© 2026 Gwanyeop Kim</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
